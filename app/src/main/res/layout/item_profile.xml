@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:layout_centerInParent="true"
+    android:gravity="bottom"
+    android:padding="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:id="@+id/li"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:text="َAmir Mohammad Ghazanfari"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/user_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/id"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/job_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_work"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Developer"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/location_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iran, Isfahan"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_btn_profile_info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="-8dp"
+                    android:layout_marginBottom="-8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_edit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Profile Image Positioned Outside CardView -->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:elevation="8dp"
+        android:id="@+id/profile_image"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/img_profile_foreground"
+        android:translationY="-45dp"
+        app:riv_border_color="#9CD6D6D6"
+        app:riv_border_width="5dip"
+        app:riv_corner_radius="2dip"
+        app:riv_oval="true" />
+    <ImageButton
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_btn_profile_picture"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp"
+        android:src="@drawable/ic_edit"
+        android:translationY="55dp"
+
+ />
+
+
+</RelativeLayout>
